@@ -12,8 +12,6 @@ int call(int h,int a,int cur)
     {
         if(i!=cur)
             t=max(t,1+call(h+ar[i][0],a+ar[i][1],i));
-            //cout<<"t= "<<t<<endl;
-
     }
     return (dp[h][a][cur]=t);
 }
@@ -25,7 +23,6 @@ int main()
     {
         int h,a;
         cin>>h>>a;
-       // cout<<ar[0][0]<<" "<<ar[0][1]<<endl;
         cout<<call(h+ar[0][0],a+ar[0][1],0)<<endl;
     }
 	return 0;
